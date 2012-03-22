@@ -1,0 +1,304 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+}
+
+#container {
+	margin: 0 auto 0;
+	width: 53em;
+	padding: 90px 0 0 0;
+	background: url(/images/combo_bar.gif) no-repeat top center;
+	font-family: Helvetica, Verdana, sans-serif;
+	font-size: 70%;
+	border: solid 1px white;
+}
+
+h1 {
+	padding-top: 0;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+
+a:link {
+	color: #3F3F72;
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #666;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #D56132;
+}
+
+.inputBox {
+	padding: 0.7em 0;
+}
+
+.inputBox form {
+	margin: 0;
+	padding: 0;
+}
+
+.inputBox label {
+	font-weight: bold;
+	font-size: 1.1em;
+	text-align: right;
+}
+
+.inputBox input {
+	font-size: 1em;
+}
+
+.formLabelBox {
+	width: 100%;
+	text-align: center;
+	margin-top: 0.3em;
+	margin-right: 5px;
+}
+
+.blue {
+	background-color: #C2D6F8;
+}
+
+.orange {
+	background-color: #FEB08F;
+}
+
+
+.small {
+	font-size: 1em;
+}
+
+.smallcentered {
+	font-size: 1em;
+	text-align: center;
+}
+
+
+.underBoxText {
+	margin: 20px 0 20px 46%;
+	text-align: center;
+}
+
+
+.underBoxText p {
+	font-size: 1em;
+	text-align: left;
+}
+
+
+#moreInfo {
+	margin-top: 6em;
+}
+
+#moreInfo hr {
+	height: 3px;
+	background: url(/images/hr.gif) repeat top center;
+}
+
+#sideBox {
+	float: right;
+	width: 40%;
+	background-color: #eee;
+	margin: 0 0 1em 1em;
+	padding: 0.3em 1em;
+}
+
+
+
+/*messagebox section -------------------------- */
+
+.messagebox {
+
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-right: 20px;
+	padding-top: 5px;
+	margin: 0 0 2em 0;
+	background-color: #c3ffc5;
+	border-color: #00d02b;
+	border-style: solid;
+	border-width: 1px;
+
+}
+
+.messagebox p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.displaytext {
+	margin-top: 0px;
+	padding-top: 0px;
+	font-size: 1.5em;
+	color: #CC6600;
+}
+
+/*errorbox section -------------------------- */
+
+.errorbox {
+
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-right: 20px;
+	padding-top: 5px;
+	margin: 0 0 2em 0;
+	background-color: #fffc9e;
+	border-color: #ffe700;
+	border-style: solid;
+	border-width: 1px;
+
+}
+
+.errorbox p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.errortitle {
+	padding-left: 20px;
+	color: #222;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+
+
+.appmessage {
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+
+#footer {
+	margin-top: 2em;
+}
+
+#footer hr {
+	height: 3px;
+	width: 100%;
+	background: url(/images/hr.gif) repeat top center;
+	clear: both;
+}
+
+
+
+.pwexpiredbox {
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	margin: 2em 0 2em 0;
+	color: #ffff00;
+	background-color: #b00000;
+	border-color: #b00000;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.pwexpiredbox p {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.pwexpiredbox a {
+	color: white;
+}
+
+.pwexpiredboxtitle {
+	font-size: 1.7em;
+}
+
+
+.large {
+	font-size: 1.7em;
+}
+
+.largecentered {
+	text-align: center;
+	font-size: 1.7em;
+}
+
+
+.returnform form {
+	margin: 1.5em auto 1.5em auto;
+}
+
+.returnforminput {
+	text-align: center;
+}
+
+
+.servertable table {
+	margin: 0.5em auto 1.5em auto;
+}
+
+.servertable caption {
+	margin: 1em auto 0 auto;
+}
+
+
+.errormessage {
+	color: #d00000;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.7em;
+}
+
+
+.bold {
+	font-weight: bold;
+}
+
+.centered {
+	text-align: center;
+}
+
+.boldcentered {
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.logoutmessage {
+	color: #d00000;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+
+.abortheader {
+	text-align: center;
+	font-size: 1.25em;
+}
+
+.abortmessage {
+	color: #d00000;
+	text-align: center;
+	font-weight: bold;
+}
+
+.aborturl {
+	text-align: center;
+}
+
+.abortlogmessage {
+	text-align: center;
+}
+
+
